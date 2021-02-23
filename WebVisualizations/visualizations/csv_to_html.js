@@ -29,6 +29,6 @@ var tabulate = function (data,columns) {
   }
   
   d3.csv('../Resources/cities.csv',function (data) {
-      var columns = ['variable','aror','asd','maxdd']
+      var columns = ['City_ID','City','Cloudiness','Country','Date','Humidity','Lat','Lng','Max Temp','Wind Speed']
     tabulate(data,columns)
   })
