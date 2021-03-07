@@ -17,37 +17,37 @@
 
   <!-- Our own CSS stylesheet -->
 
-  <link rel="stylesheet" href="../Web-Design-Challenge/assets/css/reset.css">
-  <link rel="stylesheet" href="../Web-Design-Challenge/assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
 
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Latitude Dashboard</a>
+    <a class="navbar-brand" href="../../WebVisualizations/index.html">Latitude Dashboard</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse flex-md-row-reverse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="visualizations/comparisons.html">Comparisons <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="comparisons.html">Comparisons <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="visualizations/data.html">Data Page</a>
+          <a class="nav-link" href="data.html">Data Page</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Data Plots
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Temperature analysis</a>
-            <a class="dropdown-item" href="#">Humidity analysys</a>
+            <a class="dropdown-item" href="max_temp.html">Temperature analysis</a>
+            <a class="dropdown-item" href="humidity.html">Humidity analysys</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Cloudiness analysis</a>
-            <a class="dropdown-item" href="#">Wind Speed analysis</a>
+            <a class="dropdown-item active">Cloudiness analysis</a>
+            <a class="dropdown-item" href="wind_speed.html">Wind Speed analysis</a>
           </div>
         </li>
         <li class="nav-item">
@@ -63,50 +63,49 @@
 
   <br>
   <div class='container'>
-  <div class="row">
-    <div class="col-md-6">
-      <header>
-          <h1>Summary: Latitude vs. X</h1>
-      </header>
-      <section id="introduction">
-          <img  id="main_fig" src="../WebVisualizations/assets/images/Fig1.png" alt="Latitude" style="width:400px;height:250px;float:left">
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. A adipisci, in sint quae incidunt veniam eveniet quos laboriosam aut, recusandae quasi deleniti optio ex architecto? Neque incidunt nostrum esse a?
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, odio quos vitae aliquam facilis praesentium voluptatum asperiores, itaque a minima similique sunt, commodi modi ipsum iusto ratione amet ducimus sequi?
-              
-          </p>
-
-           <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi repellat, cupiditate, error dolorem porro necessitatibus dolores ea praesentium natus harum voluptatibus labore omnis ipsa perspiciatis voluptatem beatae illo alias autem!
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae optio aliquam nemo, quis, impedit quibusdam nihil dolorum deserunt sit vero dolores nostrum cum aliquid culpa beatae quod consectetur facilis deleniti?
-             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dicta, accusantium commodi quia magni alias optio quasi doloremque eos suscipit! Reprehenderit optio tempora eveniet odio modi ipsum fugit, sapiente ducimus.
-           </p>
-      </section>
-    </div>
-    
-    
-  <div class="col-md-4">
-      <header>
-          <h2>Visualizations</h2>
-      </header>
-      <div class="row">
-          <div class="col-xs-3 col-sm-3 col-md-6">
-              <img src="../WebVisualizations/assets/images/Fig1.png" alt="test 1" style="width:250px;height:150px;">
-          </div>
-              
-          <div class="col-xs-3 col-sm-3 col-md-6">
-              <img src="../WebVisualizations/assets/images/Fig2.png" alt="test 2" style="width:250px;height:150px;">
-          </div>
-
-          <div class="col-xs-3 col-sm-3 col-md-6">
-              <img   src="../WebVisualizations/assets/images/Fig3.png" alt="test 3" style="width:250px;height:150px;">
-          </div>
-              
-          <div class="col-xs-3 col-sm-3 col-md-6">
-              <img  src="../WebVisualizations/assets/images/Fig4.png" alt="test 4" style="width:250px;height:150px;">
-          </div>
+    <div class="row">
+      <div class="col-md-8">
+        <header>
+            <h1>Latitude vs. Cloudiness</h1>
+        </header>
+        <section id="introduction">
+            <div class='text-center'>
+                <img  id="main_fig" src="assets/images/3LatvCloud.png" alt="lat_cloud">
+                <p> There does not seem to be much of a relationship between cloudiness and latitude.
+                    The data is pretty evenly split across all latiudes.
+                </p>
+            </div>
+        </section>
       </div>
-  </div>
-  </div>
-</div>
+      
+      
+        <div class="col-md-4">
+        <header>
+            <h2>Visualizations</h2>
+        </header>
+        <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-6">
+                    <img src="assets/images/1LatvTemp.png" alt="lat_temp" style="width:150px;height:150px;">
+            </div>
+                
+            <div class="col-xs-3 col-sm-3 col-md-6">
+                    <img src="assets/images/2LatvHumid.png" alt="lat_humid" style="width:150px;height:150px;">
+            </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-6">
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <img   src="assets/images/3LatvCloud.png" alt="lat_cloud" style="width:150px;height:150px;">
+                </div>
+            </div>
+                
+            <div class="col-xs-3 col-sm-3 col-md-6">
+                <img  src="assets/images/4LatvWind.png" alt="lat_wind" style="width:150px;height:150px;">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
 
 
 
