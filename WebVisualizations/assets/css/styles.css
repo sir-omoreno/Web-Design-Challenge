@@ -40,3 +40,7 @@ h2 {
   padding-top: 20px;
   background: #cdcdcd;
 }
+
+div {
+  column-gap: normal;
+}
